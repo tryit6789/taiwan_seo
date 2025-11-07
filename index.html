@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>香港威而鋼健康資訊 - 價格、真假辨識與使用指南</title>
+   <meta name="google-site-verification" content="2D-vxzjaNZGwHIs9kyVNUUaQ184FRkEdmxUtdJd_ih0" />
+    <meta name="google-site-verification" content="eKbpJtULK2h4Xt29k2DK-Q0Jo3jtZw8yPi21qIOKs5U" />
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- AOS 動畫庫 -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1e40af',
+                        secondary: '#3b82f6',
+                        accent: '#60a5fa',
+                        light: '#dbeafe',
+                        dark: '#1e3a8a',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        'card': '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)',
+                        'card-hover': '0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)',
+                    }
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .text-shadow {
+                text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            }
+            .bg-gradient-blue {
+                background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+            }
+            .transition-all-300 {
+                transition: all 300ms ease-in-out;
+            }
+        }
+        
+        /* 自定義滾動條 */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #3b82f6;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #1e40af;
+        }
+        
+        /* 平滑滾動 */
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        /* 動畫效果 */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans">
+    <!-- 導航欄 -->
+    <nav class="bg-white shadow-md-shadow-md sticky top-0 z-50">
+        <div class="container mx-auto mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-2">
+                    <i class="fa fa-heartbeat text-primary text-2xl"></i>
+                    <span class="text-xl font-bold text-primary">威而鋼健康資訊</span>
+                </div>
+                
+                <!-- 桌面導航 -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="#overview" class="text-gray-700 hover:text-primary transition-all-300">概述</a>
+                    <a href="#price" class="text-gray-700 hover:text-primary transition-all-300">價格資訊</a>
+                    <a href="#authenticity" class="text-gray-700 hover:text-primary transition-all-300">真假辨識</a>
+                    <a href="#usage" class="text-gray-700 hover:text-primary transition-all-300">使用指南</a>
+                    <a href="#faq" class="text-gray-700 hover:text-primary transition-all-300">常見問題</a>
+                </div>
+                
+                <!-- 移動導航按鈕 -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-700 hover:text-primary focus:outline-none">
+                        <i class="fa fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- 移動導航菜單 -->
+            <div id="mobile-menu" class="md:hidden hidden pt-4 pb-2">
+                <a href="#overview" class="block py-2 text-gray-700 hover:text-primary">概述</a>
+                <a href="#price" class="block py-2 text-gray-700 hover:text-primary">價格資訊</a>
+                <a href="#authenticity" class="block py-2 text-gray-700 hover:text-primary">真假辨識</a>
+                <a href="#usage" class="block py-2 text-gray-700 hover:text-primary">使用指南</a>
+                <a href="#faq" class="block py-2 text-gray-700 hover:text-primary">常見問題</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 英雄頁橫幅 -->
+    <header class="bg-gradient-blue text-white py-16 md:py-24">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-3xl md:text-5xl font-bold mb-4 text-shadow" data-aos="fade-up">香港威而鋼健康資訊</h1>
+            <p class="text-xl md:text-2xl max-w-3xl mx-auto opacity-90" data-aos="fade-up" data-aos-delay="100">
+                了解<a href="https://www.lowe99.com/">香港偉哥價錢</a>、真假辨識方法、使用指南及常見問題</p>
+                <p><a href="https://www.lowe99.com/">https://www.lowe99.com/</a></p>
+
+        </div>
+    </header>
+
+    <!-- 主要內容 -->
+    <main class="container mx-auto px-4 py-12">
+        <!-- 概述部分 -->
+        <section id="overview" class="mb-16">
+            <div class="bg-white rounded-xl shadow-card p-6 md:p-8 fade-in">
+                <h2 class="text-2xl md:text-3xl font-bold text-primary mb-6 flex items-center">
+                    <i class="fa fa-info-circle mr-3"></i>關於威而鋼
+                </h2>
+                <div class="flex flex-col md:flex-row gap-8">
+                    <div class="md:w-1/2">
+                        <p class="text-gray-700 mb-4">
+                            <a href="https://www.lowe99.com/">香港威而鋼</a>（Viagra）是一種由美國輝瑞大藥廠研發生產的藥物，主要成分為治療男性男性勃起勃起功能障礙（ED）。其主要成分為西地那非（Sildenafil），最初研發用於治療心血管疾病，後來發現對勃起功能障礙有顯著療效。
+                        </p>
+                        <p class="text-gray-700 mb-4">
+                            威而鋼通過過放鬆陰莖血管，增加性刺激時的血流量，幫助男性達成並維持勃起。需要注意的是，威而鋼本身不具備催情作用，必須在有性刺激的情況下才能發揮效果。
+                        </p>
+                        <div class="bg-blue-50 p-4 rounded-lg border border-blue-100">
+                            <h3 class="font-semibold text-primary mb-2">重要提示</h3>
+                            <p class="text-gray-700 text-sm">
+                                威而鋼為處方藥，必須在醫師診斷後憑處方購買使用。請勿自行購買使用來路不明的藥品，以免危害健康。
+                            </p>
+                        </div>
+                    </div>
+                    <div class="md:w-1/2 flex justify-center items-center">
+                        <img src="https://p3-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/rc/pc/super_tool/9a30a5aaa14f454d970d7ce9e4bb7c07~tplv-a9rns2rl98-image.image?rcl=20251028053233253A47700E39606B650D&rk3s=8e244e95&rrcfp=f06b921b&x-expires=1764192766&x-signature=sXTvuS5H%2BA%2FVaMuOYsUMbUw5TvE%3D" 
+                             alt="威而鋼藥片" 
+                             class="rounded-lg shadow-shadow-lg max-w-full h-auto"
+                             data-aos="zoom-in">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 價格資訊 -->
+        <section id="price" class="mb-16">
+            <div class="bg-white rounded-xl shadow shadow-card p-6 md:p-8 fade-in">
+                <h2 class="text-2xl md:text-3xl font-bold text-primary mb-6 flex items-center">
+                    <i class="fa fa-tag mr-3"></i>威而鋼價格資訊
+                </h2>
+                <p class="text-gray-700 mb-6">
+                    <a href="https://www.lowe99.com/">香港威而鋼價錢</a>因購買<a href="https://www.lowe99.com/">香港威而鋼哪裡買</a>和包裝規格而有所不同。以下面購買時，請選擇正規渠道，避免購買買到偽藥。
+                </p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+                    <!-- 藥局價格 -->
+                    <div class="bg-white border border-gray-200 rounded-lg shadow-card hover:shadow-card-hover transition-all-300 p-6">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-full bg-blue-100 text-primary mb-4">
+                            <i class="fa fa-shopping-bag text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3 text-center">藥局/藥房購買</h3>
+                        <p class="text-gray-700 text-center mb-4">一盒四顆裝，價格一般在1500-1600元左右</p>
+                        <p class="text-gray-500 text-sm text-center">價格因地區而有所差異</p>
+                    </div>
+                    
+                    <!-- 官網價格1 -->
+                    <div class="bg-white border border-gray-200 rounded-lg shadow-card hover:shadow-card-hover transition-all-300 p-6">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-full bg-blue-100 text-primary mb-4">
+                            <i class="fa fa-globe text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3 text-center">官網購買 - 4顆裝</h3>
+                        <p class="text-gray-700 text-center mb-4">統一定價：1400元/盒</p>
+                        <p class="text-gray-500 text-sm text-center">單顆價格：350元</p>
+                    </div>
+                    
+                    <!-- 官網價格2 -->
+                    <div class="bg-white border border border-gray-200 rounded-lg shadow-card hover:shadow-card-hover transition-all-300 p-6">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-full bg-blue-100 text-primary mb-4">
+                            <i class="fa fa-globe text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3 text-center">官網購買 - 30顆裝</h3>
+                        <p class="text-gray-700 text-center mb-4"><a href="https://www.lowe99.com/">香港威而鋼價格</a>優惠價格：4680元/瓶</p>
+                        <p class="text-gray-500 text-sm text-center">單顆價格：156元（最優惠）</p>
+                    </div>
+                </div>
+                
+                <div class="bg-yellow-50 p-4 rounded-lg border border-yellow-100">
+                    <h3 class="font-semibold text-yellow-800 mb-2 flex items-center">
+                        <i class="fa fa-exclamation-circle mr-2"></i>購買買建議
+                    </h3>
+                    <ul class="list-disc list-inside text-gray-700 space-y-2">
+                        <li><a href="https://www.lowe99.com/">香港偉哥購買</a>30顆瓶裝價格最為優惠，折算下來單顆價格只需150多元</li>
+                        <li>請勿購買價格過低的產品，可能為偽藥</li>
+                        <li>選擇正規渠道購買，確保藥品品質</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- 真假辨識部分 -->
+        <section id="authenticity" class="mb-16">
+            <div class="bg-white rounded-xl shadow-card p-6 md:p-8 fade-in">
+                <h2 class="text-2xl md:text-3xl font-bold text-primary mb-6 flex items-center">
+                    <i class="fa fa-check-circle mr-3"></i>威而鋼真假辨識
+                </h2>
+                <p class="text-gray-700 mb-6">
+                    購買威而鋼時，辨識真假至關重要。服用偽藥不僅無效，還可能對身體造成嚴重傷害。以下是四種簡單有效的辨識方法。
+                </p>
+                
+                <!-- 辨識方法卡片 -->
+                <div class="space-y-8">
+                    <!-- 方法1：外觀辨識 -->
+                    <div class="flex flex-col md:flex-row gap-6 items-center">
+                        <div class="md:w-1/2">
+                            <h3 class="text-xl font-semibold text-primary mb-3 flex items-center">
+                                <span class="bg-primary text-white rounded-full w-6 h-6 flex items-center justify-center mr-2 text-sm">1</span>
+                                外觀辨識
+                            </h3>
+                            <p class="text-gray-700 mb-4">
+                                <a href="https://www.lowe99.com/">香港威而鋼藥房</a>正品的外包裝上都會貼有鐳射防偽標識。正品鐳射防防偽標識正眼看跟側眼看的顏色都會有所不同，有一定的漸變。
+                            </p>
+                            <p class="text-gray-700">
+                                如果購買的威而鋼沒有鐳射標，或是只有單色時，基本可以判定為假藥了。
+                            </p>
+                        </div>
+                        <div class="md:w-1/2">
+                            <img src="https://p9-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/rc/pc/super_tool/3eceac83d67946b687e441af7f19516e~tplv-a9rns2rl98-image.image?rcl=20251028053233253A47700E39606B650D&rk3s=8e244e95&rrcfp=f06b921b&x-expires=1764192767&x-signature=YV086GTKlr%2F4vFxSKtWL9xsbKkA%3D" 
+                                 alt="威而鋼防偽標識" 
+                                 class="rounded-lg-lg shadow-shadow-shadow-lg max-w-full h-auto rounded-lg">
+                        </div>
+                    </div>
+                    
+                    <!-- 方法2：藥丸顏色辨識 -->
+                    <div class="flex flex-col md:flex-row-reverse gap-6 items-center">
+                        <div class="md:w-1/2">
+                            <h3 class="text-xl font-semibold text-primary mb-3 flex items-center">
+                                <span class="bg-primary text-white rounded-full w-6 h-6 flex items-center justify-center mr-2 text-sm">2</span>
+                                藥丸顏色辨識
+                            </h3>
+                            <p class="text-gray-700 mb-4">
+                                <a href="https://www.lowe99.com/">香港偉哥藥局</a>正品藥丸顏色呈現淺藍色狀，而偽藥藥丸顏色則呈現深藍色。
+                            </p>
+                            <p class="text-gray-700">
+                                很多民眾都誤以為威而鋼之所以叫「藍色小丸」就誤以為威而鋼藥丸顏色為深藍色，其實這是錯誤的。正品藥丸的顏色應該為淺藍色才對。
+                            </p>
+                        </div>
+                        <div class="md:w-1/2">
+                            <img src="https://p3-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/rc/pc/super_tool/5525004e662d476a8ee1add521b375ca~tplv-a9rns2rl98-image.image?rcl=20251028053233253A47700E39606B650D&rk3s=8e244e95&rrcfp=f06b921b&x-expires=1764192775&x-signature=H0vgoiWWX4ZGLqQo7aVErTUgSGY%3D" 
+                                 alt="威而鋼正品與偽品對比" 
+                                 class="rounded-lg shadow-shadow-shadow-lg max-w-full h-auto rounded-lg">
+                        </div>
+                    </div>
+                    
+                    <!-- 方法3：藥丸清晰度清晰度辨識 -->
+                    <div class="flex flex flex md:flex-row gap-6 items-center">
+                        <div class="md:w-1/2">
+                            <h3 class="text-xl font-semibold text-primary mb-3 flex items-center">
+                                <span class="bg-primary text-white rounded-full w-6 h-6 flex items-center justify-center mr-2 text-sm">3</span>
+                                藥丸清晰度辨識
+                            </h3>
+                            <p class="text-gray-700 mb-4">
+                                正品威而鋼是美國美國輝瑞大藥廠生產的，藥丸表面光滑，有亮光，在藥丸的正面刻有「pfizer」，而反面則刻有「VGR100」的英文字樣，字體看上去清晰、光滑。
+                            </p>
+                            <p class="text-gray-700">
+                                而偽藥藥丸一般都是小廠或是小作坊做出來的，所以藥丸表面以及字體都是非常粗糙、模糊的。
+                            </p>
+                        </div>
+                        <div class="md:w-1/2">
+                            <img src="https://p3-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/rc/pc/super_tool/9a30a5aaa14f454d970d7ce9e4bb7c07~tplv-a9rns2rl98-image.image?rcl=20251028053233253A47700E39606B650D&rk3s=8e244e95&rrcfp=f06b921b&x-expires=1764192766&x-signature=sXTvuS5H%2BA%2FVaMuOYsUMbUw5TvE%3D" 
+                                 alt="威而鋼藥丸細節" 
+                                 class="rounded-lg shadow-lg max-w-full h-auto rounded-lg">
+                        </div>
+                    </div>
+                    
+                    <!-- 方法4：藥丸成份辨識 -->
+                    <div class="flex flex-col md:flex-row-reverse gap-6 items-center">
+                        <div class="md:w-1/2">
+                            <h3 class="text-xl font-semibold text-primary mb-3 flex items-center">
+                                <span class="bg-primary text-white rounded-full w-6 h-6 flex items-center justify-center mr-2 text-sm">4</span>
+                                藥丸成份辨識
+                            </h3>
+                            <p class="text-gray-700 mb-4">
+                                正品藥丸在水中非常快的就可以溶解，而溶解後呈粉末狀，如小山堆一般，在水中不會四處渙散。
+                            </p>
+                            <p class="text-gray-700">
+                                而偽藥藥丸較為難以溶解，溶解後呈顆粒狀，非常容易渙散到容器的底部。這是因為正品藥丸的工藝良好，藥物服用之後，需要快速地被人體吸收。
+                            </p>
+                        </div>
+                        <div class="md:w-1/2">
+                            <img src="https://p3-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/rc/pc/super_tool/28a248b63d50449092bb4349023b3420~tplv-a9rns2rl98-image.image?rcl=20251028053233253A47700E39606B650D&rk3s=8e244e95&rrcfp=f06b921b&x-expires=1764192777&x-signature=ppzB%2FT0GEZCg92EszK0%2B8QAubEU%3D" 
+                                 alt="威而鋼溶解實驗" 
+                                 class="rounded-lg shadow-lg max-w-full h-auto rounded-lg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 使用指南部分 -->
+        <section id="usage" class="mb-16">
+            <div class="bg-white rounded-xl shadow-card p-6 md:p-8 fade-in">
+                <h2 class="text-2xl md:text-3xl font-bold text-primary mb-6 flex items-center">
+                    <i class="fa fa-medkit mr-3"></i>威而鋼使用指南
+                </h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                    <!-- 藥用原理 -->
+                    <div class="bg-blue-50 rounded-lg p-6">
+                        <h3 class="text-xl font-semibold text-primary mb-4 flex items-center">
+                            <i class="fa fa-flask mr-2"></i>藥用原理
+                        </h3>
+                        <p class="text-gray-700 mb-4">
+                            威而鋼的主要成分是西地那非，通過保護海綿體內環鳥苷酸（cGMP）以避免特定的磷酸二酯酶5型（PDE5）降解反應。
+                        </p>
+                        <p class="text-gray-700">
+                            海綿體內的一氧化氮（NO）與鳥苷酸環化酶（GC）的受器結合使cGMP的濃度增加，導致螺旋動脈的內膜平滑肌鬆弛，而平滑肌鬆弛則使血管擴張，增加血液流入到陰莖海綿體中造進而勃起。
+                        </p>
+                    </div>
+                    
+                    <!-- 用法用量 -->
+                    <div class="bg-blue-50 rounded-lg p-6">
+                        <h3 class="text-xl font-semibold text-primary mb-4 flex items-center">
+                            <i class="fa fa-pills mr-2"></i>用法用量
+                        </h3>
+                        <ul class="list-disc list-inside text-gray-700 space-y-2">
+                            <li>推薦劑量為50mg，性行為前約1小時服用</li>
+                            <li>根據療效和耐受性，劑量可增加至100mg或減少至25mg</li>
+                            <li>每日最多服用一次</li>
+                            <li>空腹服用效果最佳，避免與高脂食物同服</li>
+                            <li>高齡或腎肝功能不全者應從低劑量開始</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- 副作用 -->
+                <div class="bg-red-50 rounded-lg p-6 mb-8">
+                    <h3 class="text-xl font-semibold text-red-700 mb-4 flex items-center">
+                        <i class="fa fa-exclamation-triangle mr-2"></i>可能的副作用
+                    </h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <h4 class="font-medium text-red-700 mb-2">常見副作用</h4>
+                            <ul class="list-disc list-inside text-gray-700 space-y-1">
+                                <li>頭痛</li>
+                                <li>面部潮紅</li>
+                                <li>消化不良</li>
+                                <li>鼻塞</li>
+                                <li>視覺異常（如藍視症）</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-medium text-red-700 mb-2">嚴重但罕見的副作用</h4>
+                            <ul class="list-disc list-inside text-gray-700 space-y-1">
+                                <li>突然的視力喪失</li>
+                                <li>突然的聽力下降或喪失</li>
+                                <li>勃起持續超過4小時（需立即就醫）</li>
+                                <li>胸痛或不適</li>
+                                <li>心律不整</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 禁忌症 -->
+                <div class="bg-yellow-50 rounded-lg p-6">
+                    <h3 class="text-xl font-semibold text-yellow-800 mb-4 flex items-center">
+                        <i class="fa fa-ban mr-2"></i>禁忌症
+                    </h3>
+                    <p class="text-gray-700 mb-3">以下人群不適合使用<a href="https://www.lowe99.com/">香港威而鋼副作用</a>：</p>
+                    <ul class="list-disc list-inside text-gray-700 space-y-2">
+                        <li>正在服用硝酸酯類藥物（如硝化甘油）的患者</li>
+                        <li>有嚴重心臟疾病史的患者</li>
+                        <li>有嚴重肝功能不全的患者</li>
+                        <li>有低血压或不受控制的高血压的患者</li>
+                        <li>有視網膜色素變性的患者</li>
+                        <li>對西地那非或藥物中任何成分過敏的患者</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- 常見問題部分 -->
+        <section id="faq" class="mb-16">
+            <div class="bg-white rounded-xl shadow-card p-6 md:p-8 fade-in">
+                <h2 class="text-2xl md:text-3xl font-bold text-primary mb-6 flex items-center">
+                    <i class="fa fa-question-circle mr-3"></i>常見問題
+                </h2>
+                
+                <div class="space-y-4">
+                    <!-- 問題1 -->
+                    <div class="border border-gray-200 rounded-lg overflow-hidden">
+                        <button class="faq-question w-full flex justify-between items-center p-4 text-left bg-gray-50 hover:bg-gray-100 transition-all-300 focus:outline-none">
+                            <span class="font-medium text-gray-800"><a href="https://www.lowe99.com/">香港壯陽藥偉哥</a>的效果可以持續多久？</span>
+                            <i class="fa fa-chevron-down text-gray-500 transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-answer bg-white p-4 border-t border-gray-200 hidden">
+                            <p class="text-gray-700">
+                                威而鋼的效果通常在服用後30分鐘至1小時開始顯現，最長可持續約4-6小時。但需要注意的是，威而鋼並不會自動引發勃起，仍需性刺激才能發揮作用。
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- 問題2 -->
+                    <div class="border border-gray-200 rounded-lg overflow-hidden">
+                        <button class="faq-question w-full flex justify-between items-center p-4 text-left bg-gray-50 hover:bg-gray-100 transition-all-300 focus:outline-none">
+                            <span class="font-medium text-gray-800">威而鋼可以與酒精一起使用嗎？</span>
+                            <i class="fa fa-chevron-down text-gray-500 transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-answer bg-white p-4 border-t border-gray-200 hidden">
+                            <p class="text-gray-700">
+                                少量飲酒可能不會對威而鋼的效果產生重大影響，但過量飲酒可能會增加低血壓的風險，並可能降低勃起功能，從而影響威而鋼的效果。建議在使用威而鋼期間避免大量飲酒。
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- 問題3 -->
+                    <div class="border border-gray-200 rounded-lg overflow-hidden">
+                        <button class="faq-question w-full flex justify-between items-center p-4 text-left bg-gray-50 hover:bg-gray-100 transition-all-300 focus:outline-none">
+                            <span class="font-medium text-gray-800">威而鋼是否會上癮？</span>
+                            <i class="fa fa-chevron-down text-gray-500 transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-answer bg-white p-4 border-t border-gray-200 hidden">
+                            <p class="text-gray-700">
+                                <a href="https://www.lowe99.com/">偉哥購買</a>威而鋼本身並不具有成癮性。它是一種處方藥，需要在醫師指導下使用。如果長期依賴威而鋼才能勃起，建議諮詢醫師，找出勃起功能障礙的根本原因，並探討其他治療選項。
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- 問題4 -->
+                    <div class="border border-gray-200 rounded-lg overflow-hidden">
+                        <button class="faq-question w-full flex justify-between items-center p-4 text-left bg-gray-50 hover:bg-gray-100 transition-all-300 focus:outline-none">
+                            <span class="font-medium text-gray-800">威而鋼可以與其他藥物一起使用嗎？</span>
+                            <i class="fa fa-chevron-down text-gray-500 transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-answer bg-white p-4 border-t border-gray-200 hidden">
+                            <p class="text-gray-700">
+                                威而鋼與某些藥物可能存在相互作用，特別是含有硝酸酯類的藥物（如硝化甘油），這可能導致血壓急劇下降，危及生命。在使用威而鋼前，請務必告知醫師您正在使用的所有藥物，包括處方藥、非處方藥和草藥補充劑。
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- 問題5 -->
+                    <div class="border border-gray-200 rounded-lg overflow-hidden">
+                        <button class="faq-question w-full flex justify-between items-center p-4 text-left bg-gray-50 hover:bg-gray-100 transition-all-300 focus:outline-none">
+                            <span class="font-medium text-gray-800">威而鋼對所有勃起功能障礙患者都有效嗎？</span>
+                            <i class="fa fa-chevron-down text-gray-500 transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-answer bg-white p-4 border-t border-gray-200 hidden">
+                            <p class="text-gray-700">
+                                威而鋼對大多數勃起功能障礙患者有效，但並非對所有人都有效。其有效率約為70-80%。如果威而鋼對您無效，可能是因為劑量不夠、服用時間不當、與高脂食物同服，或者您的勃起功能障礙有其他原因。建議諮詢醫師，探討其他治療選項。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 頁腳 -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <div class="flex items-center space-x-2 mb-4">
+                        <i class="fa fa-heartbeat text-accent text-2xl"></i>
+                        <span class="text-xl font-bold">威而鋼健康資訊</span>
+                    </div>
+                    <p class="text-gray-400 max-w-md">
+                        本網站提供威而鋼的相關健康資訊，僅供參考，不構成醫療建議。如有健康問題，請諮詢專業醫師。
+                        <p><a href="https://www.lowe99.com/">香港偉哥</a></p>
+
+<a href="https://www.lowe99.com">香港威而鋼藥局哪裡有</a>
+<a href="https://www.lowe99.com">香港哪裡買得到偉哥</a>
+<a href="https://www.lowe99.com">香港網購偉哥推薦</a>
+<a href="https://www.lowe99.com">香港正品偉哥購買管道</a>
+<a href="https://www.lowe99.com">香港偉哥價格多少錢</a>
+<a href="https://www.lowe99.com">香港偉哥一顆多少錢</a>
+<a href="https://www.lowe99.com">香港偉哥價錢比較</a>
+<a href="https://www.lowe99.com">香港偉哥網購價錢</a>
+<a href="https://www.lowe99.com">香港威而鋼價格查詢</a>
+<a href="https://www.lowe99.com">香港偉哥便宜購買方法</a>
+<a href="https://www.lowe99.com">香港偉哥有效嗎</a>
+<a href="https://www.lowe99.com">香港偉哥藥效多久</a>
+<a href="https://www.lowe99.com">香港偉哥怎麼吃</a>
+<a href="https://www.lowe99.com">香港偉哥劑量建議</a>
+<a href="https://www.lowe99.com">香港偉哥副作用有哪些</a>
+<a href="https://www.lowe99.com">香港偉哥使用注意事項</a>
+<a href="https://www.lowe99.com">香港哪裡買正品偉哥</a>
+<a href="https://www.lowe99.com">香港偉哥正品辨別</a>
+<a href="https://www.lowe99.com">香港偉哥假貨怎麼分辨</a>
+<a href="https://www.lowe99.com">香港偉哥網購安全嗎</a>
+<a href="https://www.lowe99.com">香港藥局能買到偉哥嗎</a>
+
+
+                    </p>
+                </div>
+                
+                <div class="flex flex-col items-center md:items-end">
+                    <div class="flex space-x-4 mb-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition-all-300">
+                            <i class="fa fa-facebook-square text-2xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-all-300">
+                            <i class="fa fa-twitter-square text-2xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-all-300">
+                            <i class="fa fa-instagram text-2xl"></i>
+                        </a>
+                    </div>
+                    <p class="text-gray-400">© 2025 威而鋼健康資訊. 保留所有權利.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 返回頂部按鈕 -->
+    <button id="back-to-top" class="fixed bottom-8 right-8 bg-primary text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg opacity-0 invisible transition-all-300">
+        <i class="fa fa-chevron-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script>
+        // 初始化AOS動畫庫
+        document.addEventListener('DOMContentLoaded', function() {
+            AOS.init({
+                duration: 800,
+                easing: 'ease-in-out',
+                once: true
+            });
+            
+            // 移動導航菜單切換
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            
+            mobileMenuButton.addEventListener('click', function() {
+                mobileMenu.classList.toggle('hidden');
+            });
+            
+            // FAQ 折疊面板
+            const faqQuestions = document.querySelectorAll('.faq-question');
+            
+            faqQuestions.forEach(question => {
+                question.addEventListener('click', function() {
+                    const answer = this.nextElementSibling;
+                    const icon = this.querySelector('i');
+                    
+                    // 切換當前問題的答案顯示/隱藏
+                    answer.classList.toggle('hidden');
+                    
+                    // 旋轉圖標
+                    if (answer.classList.contains('hidden')) {
+                        icon.style.transform = 'rotate(0deg)';
+                    } else {
+                        icon.style.transform = 'rotate(180deg)';
+                    }
+                });
+            });
+            
+            // 返回頂部按鈕
+            const backToTopButton = document.getElementById('back-to-top');
+            
+            window.addEventListener('scroll', function() {
+                if (window.pageYOffset > 300) {
+                    backToTopButton.classList.remove('opacity-0', 'invisible');
+                    backToTopButton.classList.add('opacity-100', 'visible');
+                } else {
+                    backToTopButton.classList.remove('opacity-100', 'visible');
+                    backToTopButton.classList.add('opacity-0', 'invisible');
+                }
+            });
+            
+            backToTopButton.addEventListener('click', function() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+            
+            // 滾動動畫
+            const fadeElements = document.querySelectorAll('.fade-in');
+            
+            const fadeInOnScroll = function() {
+                fadeElements.forEach(element => {
+                    const elementTop = element.getBoundingClientRect().top;
+                    const windowHeight = window.innerHeight;
+                    
+                    if (elementTop < windowHeight - 100) {
+                        element.classList.add('visible');
+                    }
+                });
+            };
+            
+            // 初始檢查
+            fadeInOnScroll();
+            
+            // 滾動時檢查
+            window.addEventListener('scroll', fadeInOnScroll);
+        });
+    </script>
+</body>
+</html>

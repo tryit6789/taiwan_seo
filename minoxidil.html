@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>口服米諾地爾購買指南 - 價格、副作用與使用指南</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- AOS 動畫庫 -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1e40af',
+                        secondary: '#3b82f6',
+                        accent: '#60a5fa',
+                        light: '#dbeafe',
+                        dark: '#1e3a8a',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        'card': '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)',
+                        'card-hover': '0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)',
+                    }
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .text-shadow {
+                text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            }
+            .bg-gradient-blue {
+                background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+            }
+            .transition-all-300 {
+                transition: all 300ms ease-in-out;
+            }
+        }
+        
+        /* 自定義滾動條 */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #3b82f6;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #1e40af;
+        }
+        
+        /* 平滑滾動 */
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        /* 動畫效果 */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans">
+    <!-- 導航欄 -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-2">
+                    <i class="fa fa-medkit text-primary text-2xl"></i>
+                    <span class="text-xl font-bold text-primary"><a href="https://www.lowe99.com/good/%e5%8f%a3%e6%9c%8dminoxidil/">口服minoxidil 2.5mg</a>
+購買指南</span>
+                </div>
+                
+                <!-- 桌面導航 -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="#overview" class="text-gray-700 hover:text-primary transition-all-300">概述</a>
+                    <a href="#price" class="text-gray-700 hover:text-primary transition-all-300">價格資訊</a>
+                    <a href="#usage" class="text-gray-700 hover:text-primary transition-all-300">使用指南</a>
+                    <a href="#side-effects" class="text-gray-700 hover:text-primary transition-all-300">副作用</a>
+                    <a href="#faq" class="text-gray-700 hover:text-primary transition-all-300">常見問題</a>
+                </div>
+                
+                <!-- 移動導航按鈕 -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-700 hover:text-primary focus:outline-none">
+                        <i class="fa fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- 移動導航菜單 -->
+            <div id="mobile-menu" class="md:hidden hidden pt-4 pb-2">
+                <a href="#overview" class="block py-2 text-gray-700 hover:text-primary">概述</a>
+                <a href="#price" class="block py-2 text-gray-700 hover:text-primary"><a href="https://www.lowe99.com/good/%e5%8f%a3%e6%9c%8dminoxidil/">口服minoxidil價格</a>
+資訊</a>
+                <a href="#usage" class="block py-2 text-gray-700 hover:text-primary">使用指南</a>
+                <a href="#side-effects" class="block py-2 text-gray-700 hover:text-primary"><a href="https://www.lowe99.com/good/%e5%8f%a3%e6%9c%8dminoxidil/">口服minoxidil 副作用</a>
+                <a href="#faq" class="block py-2 text-gray-700 hover:text-primary">常見問題</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 英雄頁橫幅 -->
+    <header class="bg-gradient-blue text-white py-16 md:py-24">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-3xl md:text-5xl font-bold mb-4 text-shadow" data-aos="fade-up">口服米諾地爾購買指南</h1>
+            <p class="text-xl md:text-2xl max-w-3xl mx-auto opacity-90" data-aos="fade-up" data-aos-delay="100">
+                了解口服米諾地爾的價格、副作用、使用指南及常見問題
+            </p>
+        </div>
+    </header>
+
+    <!-- 主要內容 -->
+    <main class="container mx-auto px-4 py-12">
+        <!-- 概述部分 -->
+        <section id="overview" class="mb-16">
+            <div class="bg-white rounded-xl shadow-card p-6 md:p-8 fade-in">
+                <h2 class="text-2xl md:text-3xl font-bold text-primary mb-6 flex items-center">
+                    <i class="fa fa-info-circle mr-3"></i>關於口服米諾地爾
+                </h2>
+                <div class="flex flex-col md:flex-row gap-8">
+                    <div class="md:w-1/2">
+                        <p class="text-gray-700 mb-4">
+                            口服米諾地爾（Minoxidil）最初是用來治療高血壓的藥物，後來發現它對治療脫髮有顯著效果。研究表明，口服米諾地爾可以增加流向髮根的血液，促進毛髮生長，使新毛髮生長得更快、更強韌。
+                        </p>
+                        <p class="text-gray-700 mb-4">
+                            口服米諾地爾是一種經過驗證且成功的脫髮治療方法，已使用數十年。它的作用機制與外用米諾地爾相同，但口服形式可以更有效地被身體吸收和利用。
+                        </p>
+                        <div class="bg-blue-50 p-4 rounded-lg border border-blue-100">
+                            <h3 class="font-semibold text-primary mb-2">重要提示</h3>
+                            <p class="text-gray-700 text-sm">
+                                口服米諾地爾為處方藥，必須在醫師診斷後憑處方購買使用。請勿自行購買使用來路不明的藥品，以免危害健康。
+                            </p>
+                        </div>
+                    </div>
+                    <div class="md:w-1/2 flex justify-center items-center">
+                        <img src="https://p3-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/rc/pc/super_tool/e49fd980048942f3bc8920ba1648ed90~tplv-a9rns2rl98-image.image?rcl=20251029165123755D292BDA87376992B1&rk3s=8e244e95&rrcfp=f06b921b&x-expires=1764319923&x-signature=AoEwyHDOxywYhxydM0zJjOGUjcs%3D" 
+                             alt="口服米諾地爾藥物包裝" 
+                             class="rounded-lg shadow-lg max-w-full h-auto"
+                             data-aos="zoom-in">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 價格資訊部分 -->
+        <section id="price" class="mb-16">
+            <div class="bg-white rounded-xl shadow-card p-6 md:p-8 fade-in">
+                <h2 class="text-2xl md:text-3xl font-bold text-primary mb-6 flex items-center">
+                    <i class="fa fa-tag mr-3"></i>口服米諾地爾價格資訊
+                </h2>
+                <p class="text-gray-700 mb-6">
+                    口服米諾地爾的價格因品牌、規格、購買渠道和數量而有所不同。以下是市面上常見的口服米諾地爾產品價格比較。
+                </p>
+                
+                <div class="overflow-x-auto mb-8">
+                    <table class="min-w-full bg-white rounded-lg overflow-hidden">
+                        <thead class="bg-gray-100">
+                            <tr>
+                                <th class="py-3 px-4 text-left">產品名稱</th>
+                                <th class="py-3 px-4 text-left">規格</th>
+                                <th class="py-3 px-4 text-left">售價</th>
+                                <th class="py-3 px-4 text-left">單顆價格</th>
+                                <th class="py-3 px-4 text-left">購買渠道</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-200">
+                            <tr>
+                                <td class="py-3 px-4 font-medium">香港Loniten</td>
+                                <td class="py-3 px-4">30顆 x 2.5mg</td>
+                                <td class="py-3 px-4">800-1,000元</td>
+                                <td class="py-3 px-4">26.7-33.3元</td>
+                                <td class="py-3 px-4">醫院藥房、藥局</td>
+                            </tr>
+                            <tr class="bg-blue-50">
+                                <td class="py-3 px-4 font-medium">印度米諾地爾</td>
+                                <td class="py-3 px-4">30顆 x 2.5mg</td>
+                                <td class="py-3 px-4">400-600元</td>
+                                <td class="py-3 px-4">13.3-20元</td>
+                                <td class="py-3 px-4">網路購買、代購</td>
+                            </tr>
+                            <tr>
+                                <td class="py-3 px-4 font-medium">其他國家品牌</td>
+                                <td class="py-3 px-4">30顆 x 2.5mg</td>
+                                <td class="py-3 px-4">600-800元</td>
+                                <td class="py-3 px-4">20-26.7元</td>
+                                <td class="py-3 px-4">網路購買、代購</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- 價格分析 -->
+                    <div class="bg-blue-50 rounded-lg p-6">
+                        <h3 class="text-xl font-semibold text-primary mb-4 flex items-center">
+                            <i class="fa fa-line-chart mr-2"></i>價格分析
+                        </h3>
+                        <ul class="text-gray-700 space-y-2">
+                            <li class="flex items-start">
+                                <i class="fa fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                <span>印度米諾地爾價格最為優惠，比香港原廠便宜約50%</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa fa-exclamation-circle text-yellow-500 mt-1 mr-2"></i>
+                                <span>過低價格可能為假貨，請謹慎選擇</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa fa-info-circle text-blue-500 mt-1 mr-2"></i>
+                                <span>購買數量越多，單價通常越優惠</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                <span>口服米諾地爾比外用米諾地爾更經濟實惠，效果更好</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- 購買渠道比較 -->
+                    <div class="bg-blue-50 rounded-lg p-6">
+                        <h3 class="text-xl font-semibold text-primary mb-4 flex items-center">
+                            <i class="fa fa-shopping-bag mr-2"></i>購買渠道比較
+                        </h3>
+                        <ul class="text-gray-700 space-y-2">
+                            <li class="flex items-start">
+                                <i class="fa fa-hospital-o text-blue-500 mt-1 mr-2"></i>
+                                <span><strong>醫院藥房/藥局：</strong>正品保障，但價格較高，需醫師處方</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa fa-globe text-blue-500 mt-1 mr-2"></i>
+                                <span><strong>網路購買：</strong>價格優惠，方便快捷，但需謹慎選擇商家</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa fa-user text-blue-500 mt-1 mr-2"></i>
+                                <span><strong>代購：</strong>可購買到未在本地上市的版本，但假貨風險高</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                <span>建議選擇正規渠道購買，確保藥品品質</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 使用指南部分 -->
+        <section id="usage" class="mb-16">
+            <div class="bg-white rounded-xl shadow-card p-6 md:p-8 fade-in">
+                <h2 class="text-2xl md:text-3xl font-bold text-primary mb-6 flex items-center">
+                    <i class="fa fa-book mr-3"></i>口服米諾地爾使用指南
+                </h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                    <!-- 推薦劑量 -->
+                    <div class="bg-blue-50 rounded-lg p-6">
+                        <h3 class="text-xl font-semibold text-primary mb-4 flex items-center">
+                            <i class="fa fa-pills mr-2"></i>推薦劑量
+                        </h3>
+                        <ul class="text-gray-700 space-y-3">
+                            <li class="flex items-start">
+                                <i class="fa fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                <span>初始劑量：半片（2.5mg），每天一次，持續兩週</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                <span>維持劑量：如果無異常副作用，則增加至每天一片（2.5mg或5mg）</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                <span>建議緩慢開始，以確保身體能夠逐漸適應</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa fa-exclamation-circle text-yellow-500 mt-1 mr-2"></i>
+                                <span>勿自行調整劑量，如有需要請諮詢醫師</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- 預期效果 -->
+                    <div class="bg-blue-50 rounded-lg p-6">
+                        <h3 class="text-xl font-semibold text-primary mb-4 flex items-center">
+                            <i class="fa fa-clock-o mr-2"></i>預期效果
+                        </h3>
+                        <ul class="text-gray-700 space-y-3">
+                            <li class="flex items-start">
+                                <i class="fa fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                <span>初期階段（1-2個月）：可能出現暫時性脫髮增加</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                <span>初步效果（3-6個月）：脫髮減少，新毛髮開始生長</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                <span>最佳效果（6-12個月）：毛髮密度明顯增加，毛髮更強韌</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa fa-exclamation-circle text-yellow-500 mt-1 mr-2"></i>
+                                <span>效果因人而異，取決於脫髮程度、年齡和治療開始時間</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- 治療前後對比 -->
+                <div class="mb-8">
+                    <h3 class="text-xl font-semibold text-primary mb-4 flex items-center">
+                        <i class="fa fa-before-after mr-2"></i>治療前後對比
+                    </h3>
+                    <div class="flex justify-center">
+                        <img src="https://p3-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/rc/pc/super_tool/007590283a4c45b79c00282f6e71cd2e~tplv-a9rns2rl98-image.image?rcl=20251029165123755D292BDA87376992B1&rk3s=8e244e95&rrcfp=f06b921b&x-expires=1764319930&x-signature=NmMqKyVtMQbjyZCDyNLJreSpbBo%3D" 
+                             alt="男性脫髮治療前後對比" 
+                             class="rounded-lg shadow-lg max-w-full h-auto">
+                    </div>
+                </div>
+                
+                <!-- 與其他藥物合用 -->
+                <div class="bg-green-50 rounded-lg p-6">
+                    <h3 class="text-xl font-semibold text-green-700 mb-4 flex items-center">
+                        <i class="fa fa-plus-circle mr-2"></i>與其他藥物合用效果更好
+                    </h3>
+                    <p class="text-gray-700 mb-3">
+                        臨床研究證明，口服米諾地爾與其他脫髮治療藥物聯合使用可以達到更好的治療效果：
+                    </p>
+                    <ul class="list-disc list-inside text-gray-700 space-y-2">
+                        <li>與非那雄胺(Finasteride)或度他雄胺(Dutasteride)合用：可以同時從不同機制治療脫髮，提高治療效果</li>
+                        <li>與外用米諾地爾合用：可以增強局部效果，提高毛髮密度</li>
+                        <li>與生物素、鋅等營養補充劑合用：可以提供毛髮生長所需的營養，增強毛髮健康</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- 副作用部分 -->
+        <section id="side-effects" class="mb-16">
+            <div class="bg-white rounded-xl shadow-card p-6 md:p-8 fade-in">
+                <h2 class="text-2xl md:text-3xl font-bold text-primary mb-6 flex items-center">
+                    <i class="fa fa-exclamation-triangle mr-3"></i>口服米諾地爾副作用
+                </h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                    <!-- 常見副作用 -->
+                    <div class="bg-yellow-50 rounded-lg p-6">
+                        <h3 class="text-xl font-semibold text-yellow-700 mb-4 flex items-center">
+                            <i class="fa fa-info-circle mr-2"></i>常見副作用
+                        </h3>
+                        <p class="text-gray-700 mb-3">
+                            口服米諾地爾的副作用通常較輕微且暫時性，包括：
+                        </p>
+                        <ul class="list-disc list-inside text-gray-700 space-y-2">
+                            <li>多毛症（毛髮過度生長），尤其是面部、手部和背部</li>
+                            <li>暫時性脫髮增加（治療前6週內常見）</li>
+                            <li>頭暈、低血壓</li>
+                            <li>心跳加快</li>
+                            <li>水腫（尤其是腳踝）</li>
+                            <li>頭痛</li>
+                        </ul>
+                        <p class="text-gray-700 mt-3 text-sm">
+                            這些副作用通常在治療初期出現，並可能隨著身體適應藥物而減輕或消失。
+                        </p>
+                    </div>
+                    
+                    <!-- 罕見但嚴重的副作用 -->
+                    <div class="bg-red-50 rounded-lg p-6">
+                        <h3 class="text-xl font-semibold text-red-700 mb-4 flex items-center">
+                            <i class="fa fa-warning mr-2"></i>罕見但嚴重的副作用
+                        </h3>
+                        <p class="text-gray-700 mb-3">
+                            如出現以下嚴重副作用，應立即停藥並就醫：
+                        </p>
+                        <ul class="list-disc list-inside text-gray-700 space-y-2">
+                            <li>嚴重的過敏反應（皮疹、瘙癢、荨麻疹、呼吸困難）</li>
+                            <li>胸痛或心悸</li>
+                            <li>嚴重頭痛或眩暈</li>
+                            <li>視力模糊或視力改變</li>
+                            <li>異常疲勞或虛弱</li>
+                            <li>嚴重水腫</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- 副作用發生率與持續時間 -->
+                <div class="bg-blue-50 rounded-lg p-6 mb-8">
+                    <h3 class="text-xl font-semibold text-primary mb-4 flex items-center">
+                        <i class="fa fa-bar-chart mr-2"></i>副作用發生率與持續時間
+                    </h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <h4 class="font-medium text-primary mb-2">發生率</h4>
+                            <ul class="text-gray-700 space-y-2">
+                                <li class="flex items-start">
+                                    <i class="fa fa-circle text-xs text-blue-500 mt-1.5 mr-2"></i>
+                                    <span>多毛症：約5-10%的使用者</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fa fa-circle text-xs text-blue-500 mt-1.5 mr-2"></i>
+                                    <span>暫時性脫髮：約30-40%的使用者（治療初期）</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fa fa-circle text-xs text-blue-500 mt-1.5 mr-2"></i>
+                                    <span>低血壓相關症狀：約1-5%的使用者</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fa fa-circle text-xs text-blue-500 mt-1.5 mr-2"></i>
+                                    <span>因副作用停止治療：僅0.5%的使用者</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-medium text-primary mb-2">持續時間</h4>
+                            <ul class="text-gray-700 space-y-2">
+                                <li class="flex items-start">
+                                    <i class="fa fa-circle text-xs text-blue-500 mt-1.5 mr-2"></i>
+                                    <span>暫時性脫髮：通常在6-8週內停止</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fa fa-circle text-xs text-blue-500 mt-1.5 mr-2"></i>
+                                    <span>多毛症：可能在治療期間持續存在，但通常在停藥後消失</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fa fa-circle text-xs text-blue-500 mt-1.5 mr-2"></i>
+                                    <span>其他副作用：大多數在治療初期出現，並可能隨時間減輕</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 禁忌症 -->
+                <div class="bg-red-50 rounded-lg p-6">
+                    <h3 class="text-xl font-semibold text-red-700 mb-4 flex items-center">
+                        <i class="fa fa-ban mr-2"></i>禁忌症
+                    </h3>
+                    <p class="text-gray-700 mb-3">以下人群不適合使用口服米諾地爾：</p>
+                    <ul class="list-disc list-inside text-gray-700 space-y-2">
+                        <li>對米諾地爾或藥物中任何成分過敏者</li>
+                        <li>孕婦或可能懷孕的女性</li>
+                        <li>哺乳期婦女</li>
+                        <li>兒童</li>
+                        <li>有嚴重心臟疾病史者</li>
+                        <li>有嚴重肝腎功能不全者</li>
+                        <li>有低血壓病史者</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- 常見問題部分 -->
+        <section id="faq" class="mb-16">
+            <div class="bg-white rounded-xl shadow-card p-6 md:p-8 fade-in">
+                <h2 class="text-2xl md:text-3xl font-bold text-primary mb-6 flex items-center">
+                    <i class="fa fa-question-circle mr-3"></i>常見問題
+                </h2>
+                
+                <div class="space-y-4">
+                    <!-- 問題1 -->
+                    <div class="border border-gray-200 rounded-lg overflow-hidden">
+                        <button class="faq-question w-full flex justify-between items-center p-4 text-left bg-gray-50 hover:bg-gray-100 transition-all-300 focus:outline-none">
+                            <span class="font-medium text-gray-800">口服米諾地爾需要醫師處方嗎？</span>
+                            <i class="fa fa-chevron-down text-gray-500 transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-answer bg-white p-4 border-t border-gray-200 hidden">
+                            <p class="text-gray-700">
+                                是的，口服米諾地爾是處方藥，必須在醫師診斷後憑處方購買使用。醫師會根據您的具體情況評估是否適合使用口服米諾地爾，並決定合適的劑量。
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- 問題2 -->
+                    <div class="border border-gray-200 rounded-lg overflow-hidden">
+                        <button class="faq-question w-full flex justify-between items-center p-4 text-left bg-gray-50 hover:bg-gray-100 transition-all-300 focus:outline-none">
+                            <span class="font-medium text-gray-800">口服米諾地爾與外用米諾地爾有何區別？</span>
+                            <i class="fa fa-chevron-down text-gray-500 transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-answer bg-white p-4 border-t border-gray-200 hidden">
+                            <p class="text-gray-700">
+                                口服米諾地爾與外用米諾地爾的主要區別在於給藥途徑和效果：
+                            </p>
+                            <ul class="list-disc list-inside text-gray-700 mt-2">
+                                <li><strong>給藥途徑：</strong>口服米諾地爾是通過口服吸收，而外用米諾地爾是直接塗抹在頭皮上</li>
+                                <li><strong>效果：</strong>研究表明，口服米諾地爾在阻止和逆轉脫髮方面比外用米諾地爾有效約30%</li>
+                                <li><strong>便利性：</strong>口服米諾地爾使用更方便，只需每天服用一次藥片，而外用米諾地爾需要每天塗抹在頭皮上</li>
+                                <li><strong>副作用：</strong>口服米諾地爾可能引起全身副作用，如低血壓、多毛症等，而外用米諾地爾的副作用主要局限在局部，如頭皮瘙癢、紅腫等</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- 問題3 -->
+                    <div class="border border-gray-200 rounded-lg overflow-hidden">
+                        <button class="faq-question w-full flex justify-between items-center p-4 text-left bg-gray-50 hover:bg-gray-100 transition-all-300 focus:outline-none">
+                            <span class="font-medium text-gray-800">口服米諾地爾需要服用多久才能看到效果？</span>
+                            <i class="fa fa-chevron-down text-gray-500 transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-answer bg-white p-4 border-t border-gray-200 hidden">
+                            <p class="text-gray-700">
+                                口服米諾地爾治療脫髮需要一定的時間才能看到效果。一般而言，在您注意到頭髮生長顯著促進之前，可能需要持續使用4-6個月。研究表明，約三分之一的男性在治療約6個月後會減少脫落，另外三分之一的男性會出現生長改善。我們建議您使用口服米諾地爾6至12個月，以充分發揮效果。
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- 問題4 -->
+                    <div class="border border-gray-200 rounded-lg overflow-hidden">
+                        <button class="faq-question w-full flex justify-between items-center p-4 text-left bg-gray-50 hover:bg-gray-100 transition-all-300 focus:outline-none">
+                            <span class="font-medium text-gray-800">口服米諾地爾治療初期為什麼會出現脫髮增加？</span>
+                            <i class="fa fa-chevron-down text-gray-500 transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-answer bg-white p-4 border-t border-gray-200 hidden">
+                            <p class="text-gray-700">
+                                口服米諾地爾治療初期出現脫髮增加是正常現象，通常發生在治療的前6週內。這是因為米諾地爾會加速毛髮的生長周期，促使處於休止期的毛髮提前脫落，為新的毛髮生長騰出空間。這種暫時性的脫髮增加實際上是治療正在發揮作用的表現，通常會在6-8週內停止，隨後會有新的毛髮開始生長。
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- 問題5 -->
+                    <div class="border border-gray-200 rounded-lg overflow-hidden">
+                        <button class="faq-question w-full flex justify-between items-center p-4 text-left bg-gray-50 hover:bg-gray-100 transition-all-300 focus:outline-none">
+                            <span class="font-medium text-gray-800">口服米諾地爾可以長期使用嗎？</span>
+                            <i class="fa fa-chevron-down text-gray-500 transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-answer bg-white p-4 border-t border-gray-200 hidden">
+                            <p class="text-gray-700">
+                                是的，口服米諾地爾可以長期使用。臨床研究表明，長期使用口服米諾地爾是安全有效的。為了維持治療效果，通常需要持續使用。一旦停止使用，由於毛囊血液供應減少，之前的脫髮模式可能在幾個月內恢復。因此，為了維持效果，通常需要長期持續使用。
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- 問題6 -->
+                    <div class="border border-gray-200 rounded-lg overflow-hidden">
+                        <button class="faq-question w-full flex justify-between items-center p-4 text-left bg-gray-50 hover:bg-gray-100 transition-all-300 focus:outline-none">
+                            <span class="font-medium text-gray-800">口服米諾地爾與非那雄胺可以同時使用嗎？</span>
+                            <i class="fa fa-chevron-down text-gray-500 transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-answer bg-white p-4 border-t border-gray-200 hidden">
+                            <p class="text-gray-700">
+                                是的，口服米諾地爾與非那雄胺可以同時使用。事實上，這種組合治療通常比單獨使用任何一種藥物效果更好。這是因為它們通過不同的機制來治療脫髮：
+                            </p>
+                            <ul class="list-disc list-inside text-gray-700 mt-2">
+                                <li><strong>非那雄胺：</strong>通過抑制5α-還原酶的活性，減少睾酮轉化為雙氫睾酮(DHT)，從而減少DHT對毛囊的損害</li>
+                                <li><strong>米諾地爾：</strong>通過增加流向毛囊的血液，促進毛髮生長，使毛髮更強韌、更健康</li>
+                            </ul>
+                            <p class="text-gray-700 mt-2">
+                                這種組合治療可以同時針對脫髮的兩個主要原因：DHT對毛囊的損害和毛囊血液供應不足。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 頁腳 -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <div class="flex items-center space-x-2 mb-4">
+                        <i class="fa fa-medkit text-accent text-2xl"></i>
+                        <span class="text-xl font-bold">口服米諾地爾購買指南</span>
+                    </div>
+                    <p class="text-gray-400 max-w-md">
+                        本網站提供口服米諾地爾的相關健康資訊，僅供參考，不構成醫療建議。如有健康問題，請諮詢專業醫師。
+                    </p>
+                    <a href="https://www.lowe99.com/">口服minoxidil香港</a>
+<a href="https://www.lowe99.com/">口服minoxidil副作用</a>
+<a href="https://www.lowe99.com/">口服minoxidil 邊度買</a>
+<a href="https://www.lowe99.com/">minoxidil hong kong</a>
+<a href="https://www.lowe99.com/">米諾地爾香港</a>
+<a href="https://www.lowe99.com/">米諾地爾價錢</a>
+                </div>
+                
+                <div class="flex flex-col items-center md:items-end">
+                    <div class="flex space-x-4 mb-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition-all-300">
+                            <i class="fa fa-facebook-square text-2xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-all-300">
+                            <i class="fa fa-twitter-square text-2xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-all-300">
+                            <i class="fa fa-instagram text-2xl"></i>
+                        </a>
+                    </div>
+                    <p class="text-gray-400">© 2025 口服米諾地爾購買指南. 保留所有權利.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 返回頂部按鈕 -->
+    <button id="back-to-top" class="fixed bottom-8 right-8 bg-primary text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg opacity-0 invisible transition-all-300">
+        <i class="fa fa-chevron-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script>
+        // 初始化AOS動畫庫
+        document.addEventListener('DOMContentLoaded', function() {
+            AOS.init({
+                duration: 800,
+                easing: 'ease-in-out',
+                once: true
+            });
+            
+            // 移動導航菜單切換
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            
+            mobileMenuButton.addEventListener('click', function() {
+                mobileMenu.classList.toggle('hidden');
+            });
+            
+            // FAQ 折疊面板
+            const faqQuestions = document.querySelectorAll('.faq-question');
+            
+            faqQuestions.forEach(question => {
+                question.addEventListener('click', function() {
+                    const answer = this.nextElementSibling;
+                    const icon = this.querySelector('i');
+                    
+                    // 切換當前問題的答案顯示/隱藏
+                    answer.classList.toggle('hidden');
+                    
+                    // 旋轉圖標
+                    if (answer.classList.contains('hidden')) {
+                        icon.style.transform = 'rotate(0deg)';
+                    } else {
+                        icon.style.transform = 'rotate(180deg)';
+                    }
+                });
+            });
+            
+            // 返回頂部按鈕
+            const backToTopButton = document.getElementById('back-to-top');
+            
+            window.addEventListener('scroll', function() {
+                if (window.pageYOffset > 300) {
+                    backToTopButton.classList.remove('opacity-0', 'invisible');
+                    backToTopButton.classList.add('opacity-100', 'visible');
+                } else {
+                    backToTopButton.classList.remove('opacity-100', 'visible');
+                    backToTopButton.classList.add('opacity-0', 'invisible');
+                }
+            });
+            
+            backToTopButton.addEventListener('click', function() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+            
+            // 滾動動畫
+            const fadeElements = document.querySelectorAll('.fade-in');
+            
+            const fadeInOnScroll = function() {
+                fadeElements.forEach(element => {
+                    const elementTop = element.getBoundingClientRect().top;
+                    const windowHeight = window.innerHeight;
+                    
+                    if (elementTop < windowHeight - 100) {
+                        element.classList.add('visible');
+                    }
+                });
+            };
+            
+            // 初始檢查
+            fadeInOnScroll();
+            
+            // 滾動時檢查
+            window.addEventListener('scroll', fadeInOnScroll);
+        });
+    </script>
+</body>
+</html>

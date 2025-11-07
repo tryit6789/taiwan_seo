@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>香港必利勁購買指南 - 正確渠道與價格比較</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- AOS 動畫庫 -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1e40af',
+                        secondary: '#3b82f6',
+                        accent: '#60a5fa',
+                        light: '#dbeafe',
+                        dark: '#1e3a8a',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        'card': '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)',
+                        'card-hover': '0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)',
+                    }
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .text-shadow {
+                text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            }
+            .bg-gradient-blue {
+                background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+            }
+            .transition-all-300 {
+                transition: all 300ms ease-in-out;
+            }
+        }
+        
+        /* 自定義滾動條 */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #3b82f6;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #1e40af;
+        }
+        
+        /* 平滑滾動 */
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        /* 動畫效果 */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        /* 藥品包裝模擬 */
+        .medicine-package {
+            background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .medicine-package::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 40%;
+            background: linear-gradient(135deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0) 100%);
+            border-radius: 12px 12px 0 0;
+        }
+        
+        /* 藥片模擬 */
+        .pill {
+            width: 40px;
+            height: 12px;
+            background: #3b82f6;
+            border-radius: 20px;
+            box-shadow: inset -2px -2px 4px rgba(0, 0, 0, 0.2), inset 2px 2px 4px rgba(255, 255, 255, 0.3);
+        }
+        
+        /* 防偽標籤模擬 */
+        .security-label {
+            background: linear-gradient(135deg, #60a5fa 0%, #1e40af 100%);
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .security-label::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at 30% 30%, rgba(255,255,255,0.3) 0%, rgba(255,255,255,0) 50%);
+            opacity: 0.7;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans">
+    <!-- 導航欄 -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-2">
+                    <i class="fa fa-heartbeat text-primary text-2xl"></i>
+                    <span class="text-xl font-bold text-primary">必利勁購買指南</span>
+                </div>
+                
+                <!-- 桌面導航 -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="#overview" class="text-gray-700 hover:text-primary transition-all-300">概述</a>
+                    <a href="#purchase-channels" class="text-gray-700 hover:text-primary transition-all-300">購買渠道</a>
+                    <a href="#price-comparison" class="text-gray-700 hover:text-primary transition-all-300">價格比較</a>
+                    <a href="#precautions" class="text-gray-700 hover:text-primary transition-all-300">注意事項</a>
+                    <a href="#faq" class="text-gray-700 hover:text-primary transition-all-300">常見問題</a>
+                </div>
+                
+                <!-- 移動導航按鈕 -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-700 hover:text-primary focus:outline-none">
+                        <i class="fa fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- 移動導航菜單 -->
+            <div id="mobile-menu" class="md:hidden hidden pt-4 pb-2">
+                <a href="#overview" class="block py-2 text-gray-700 hover:text-primary">概述</a>
+                <a href="#purchase-channels" class="block py-2 text-gray-700 hover:text-primary">購買渠道</a>
+                <a href="#price-comparison" class="block py-2 text-gray-700 hover:text-primary">價格比較</a>
+                <a href="#precautions" class="block py-2 text-gray-700 hover:text-primary">注意事項</a>
+                <a href="#faq" class="block py-2 text-gray-700 hover:text-primary">常見問題</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 英雄頁橫幅 -->
+    <header class="bg-gradient-blue text-white py-16 md:py-24">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-3xl md:text-5xl font-bold mb-4 text-shadow" data-aos="fade-up">必利勁購買指南</h1>
+            <p class="text-xl md:text-2xl max-w-3xl mx-auto opacity-90" data-aos="fade-up" data-aos-delay="100">
+                了解<a href="https://www.lowe99.com/">香港必利勁</a>的正確<a href="https://www.lowe99.com/">必利勁購買</a>渠道、價格比較及注意事項</p>
+                 <a href="https://www.lowe99.com/">https://www.lowe99.com/</a>
+        </div>
+    </header>
+
+    <!-- 主要內容 -->
+    <main class="container mx-auto px-4 py-12">
+        <!-- 概述部分 -->
+        <section id="overview" class="mb-16">
+            <div class="bg-white rounded-xl shadow-card p-6 md:p-8 fade-in">
+                <h2 class="text-2xl md:text-3xl font-bold text-primary mb-6 flex items-center">
+                    <i class="fa fa-info-circle mr-3"></i>關於必利勁
+                </h2>
+                <div class="flex flex-col md:flex-row gap-8">
+                    <div class="md:w-1/2">
+                        <p class="text-gray-700 mb-4">
+                            必利勁（Priligy）是一種專門為治療男性早洩（PE）而研發的藥物。它的主要成分是達泊西汀（Dapoxetine），屬於選擇性5-羥色胺再攝取抑制劑（SSRI），通過延長神經遞質5-羥色胺在突觸間隙的作用時間，來幫助延長射精潛伏期。
+                        </p>
+                        <p class="text-gray-700 mb-4">
+                            必利勁是目前全球唯一一款獲得批准用於治療早洩的處方藥，臨床研究表明它可以有效延長射精時間2-4倍，幫助改善性生活質量和伴侶關係。
+                        </p>
+                        <div class="bg-blue-50 p-4 rounded-lg border border-blue-100">
+                            <h3 class="font-semibold text-primary mb-2">重要提示</h3>
+                            <p class="text-gray-700 text-sm">
+                                必利勁為處方藥，必須在醫師診斷後憑處方購買使用。請勿自行購買使用來路不明的藥品，以免危害健康。
+                            </p>
+                        </div>
+                    </div>
+                    <div class="md:w-1/2 flex justify-center items-center">
+                        <div class="medicine-package w-64 h-80 flex flex-col items-center justify-center p-6 text-white">
+                            <div class="security-label w-32 h-32 flex items-center justify-center mb-6">
+                                <span class="text-center font-bold z-10">防偽<br>標識</span>
+                            </div>
+                            <div class="text-center z-10">
+                                <h3 class="text-xl font-bold mb-2">必利勁</h3>
+                                <p class="text-sm opacity-80">達泊西汀片</p>
+                                <p class="text-xs opacity-60 mt-1">30mg/60mg</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 購買渠道部分 -->
+        <section id="purchase-channels" class="mb-16">
+            <div class="bg-white rounded-xl shadow-card p-6 md:p-8 fade-in">
+                <h2 class="text-2xl md:text-3xl font-bold text-primary mb-6 flex items-center">
+                    <i class="fa fa-shopping-bag mr-3"></i><a href="https://www.lowe99.com/">必利勁購買</a>渠道
+                </h2>
+                <p class="text-gray-700 mb-6">
+                    購買必利勁主要有三種渠道：藥房/藥局購買、<a href="https://www.lowe99.com/">必利勁網路購買</a>和代購。以下是各種渠道的詳細介紹和比較。
+                </p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+                    <!-- 藥房/藥局購買 -->
+                    <div class="bg-white border border-gray-200 rounded-lg shadow-card hover:shadow-card-hover transition-all-300 p-6">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-full bg-blue-100 text-primary mb-4">
+                            <i class="fa fa-hospital-o text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3 text-center">藥房/藥局購買</h3>
+                        <ul class="text-gray-700 space-y-2 mb-4">
+                            <li class="flex items-start">
+                                <i class="fa fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                <span>需醫師處方箋</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                <span>正品保障，避免假貨</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                <span>專業藥師指導</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa fa-times-circle text-red-500 mt-1 mr-2"></i>
+                                <span><a href="https://www.lowe99.com/">必利勁價錢</a>相對較高</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa fa-times-circle text-red-500 mt-1 mr-2"></i>
+                                <span>需親自前往，可能造成不便</span>
+                            </li>
+                        </ul>
+                        <div class="bg-blue-50 p-3 rounded-lg">
+                            <p class="text-sm text-gray-700">
+                                <strong>購買流程：</strong>就醫診斷 → 醫師開具處方 → 憑處方前往<a href="https://www.lowe99.com/">必利勁藥房</a>購買
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- 網路購買 -->
+                    <div class="bg-white border border-gray-200 rounded-lg shadow-card hover:shadow-card-hover transition-all-300 p-6">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-full bg-blue-100 text-primary mb-4">
+                            <i class="fa fa-globe text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3 text-center">網路購買</h3>
+                        <ul class="text-gray-700 space-y-2 mb-4">
+                            <li class="flex items-start">
+                                <i class="fa fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                <span>方便快捷，在家即可購買</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                <span>價格可能更優惠</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                <span>保護隱私，避免尷尬</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa fa-times-circle text-red-500 mt-1 mr-2"></i>
+                                <span>需謹慎選擇，避免假貨</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa fa-times-circle text-red-500 mt-1 mr-2"></i>
+                                <span>配送需要時間</span>
+                            </li>
+                        </ul>
+                        <div class="bg-blue-50 p-3 rounded-lg">
+                            <p class="text-sm text-gray-700">
+                                <strong>購買建議：</strong>選擇正規藥廠代理商，檢查網站認證，避免過低價格
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- 代購 -->
+                    <div class="bg-white border border-gray-200 rounded-lg shadow-card hover:shadow-card-hover transition-all-300 p-6">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-full bg-blue-100 text-primary mb-4">
+                            <i class="fa fa-user text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3 text-center">代購</h3>
+                        <ul class="text-gray-700 space-y-2 mb-4">
+                            <li class="flex items-start">
+                                <i class="fa fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                <span>可購買到未在本地上市的版本</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa fa-times-circle text-red-500 mt-1 mr-2"></i>
+                                <span>假貨風險高</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa fa-times-circle text-red-500 mt-1 mr-2"></i>
+                                <span>價格不透明，可能被加收高額費用</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa fa-times-circle text-red-500 mt-1 mr-2"></i>
+                                <span>售後服務無保障</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa fa-times-circle text-red-500 mt-1 mr-2"></i>
+                                <span>可能涉及法律風險</span>
+                            </li>
+                        </ul>
+                        <div class="bg-blue-50 p-3 rounded-lg">
+                            <p class="text-sm text-gray-700">
+                                <strong>注意事項：</strong>謹慎選擇代購渠道，確認藥品來源和品質
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-yellow-50 p-4 rounded-lg border border-yellow-100">
+                    <h3 class="font-semibold text-yellow-800 mb-2 flex items-center">
+                        <i class="fa fa-exclamation-circle mr-2"></i>藥師建議
+                    </h3>
+                    <p class="text-gray-700">
+                        優先選擇藥房/藥局購買，確保藥品品質和用藥安全。如選擇網路購買，請選擇正規藥廠代理商，避免購買到假冒偽劣產品。代購存在較大風險，請謹慎考慮。
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 價格比較部分 -->
+        <section id="price-comparison" class="mb-16">
+            <div class="bg-white rounded-xl shadow-card p-6 md:p-8 fade-in">
+                <h2 class="text-2xl md:text-3xl font-bold text-primary mb-6 flex items-center">
+                    <i class="fa fa-money mr-3"></i>必利勁價格比較
+                </h2>
+                <p class="text-gray-700 mb-6">
+                    必利勁的價格因品牌、規格、購買渠道和數量而有所不同。以下是市面上常見的必利勁產品價格比較。
+                </p>
+                
+                <div class="overflow-x-auto mb-8">
+                    <table class="min-w-full bg-white rounded-lg overflow-hidden">
+                        <thead class="bg-gray-100">
+                            <tr>
+                                <th class="py-3 px-4 text-left">產品類型</th>
+                                <th class="py-3 px-4 text-left">規格</th>
+                                <th class="py-3 px-4 text-left">售價</th>
+                                <th class="py-3 px-4 text-left">單顆價格</th>
+                                <th class="py-3 px-4 text-left">購買渠道</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-200">
+                            <tr>
+                                <td class="py-3 px-4 font-medium">香港正品必利勁</td>
+                                <td class="py-3 px-4">3顆 x 30mg</td>
+                                <td class="py-3 px-4">1,200元</td>
+                                <td class="py-3 px-4">400元</td>
+                                <td class="py-3 px-4">醫院藥房、藥局</td>
+                            </tr>
+                            <tr class="bg-blue-50">
+                                <td class="py-3 px-4 font-medium">印度必利勁學名藥</td>
+                                <td class="py-3 px-4">10顆 x 60mg</td>
+                                <td class="py-3 px-4">1,580元</td>
+                                <td class="py-3 px-4">158元 (60mg)<br>79元 (30mg)</td>
+                                <td class="py-3 px-4">網路購買、代購</td>
+                            </tr>
+                            <tr>
+                                <td class="py-3 px-4 font-medium">其他國家原廠必利勁</td>
+                                <td class="py-3 px-4">3顆 x 30mg</td>
+                                <td class="py-3 px-4">800-1,000元</td>
+                                <td class="py-3 px-4">267-333元</td>
+                                <td class="py-3 px-4">網路購買、代購</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- 價格分析 -->
+                    <div class="bg-blue-50 rounded-lg p-6">
+                        <h3 class="text-xl font-semibold text-primary mb-4 flex items-center">
+                            <i class="fa fa-line-chart mr-2"></i>價格分析
+                        </h3>
+                        <ul class="text-gray-700 space-y-2">
+                            <li class="flex items-start">
+                                <i class="fa fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                <span>印度必利勁學名藥價格最為優惠，比香港正品便宜約75%</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                <span>印度必利勁60mg可拆分為兩次30mg使用，進一步降低用藥成本</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa fa-exclamation-circle text-yellow-500 mt-1 mr-2"></i>
+                                <span>過低價格可能為假貨，請謹慎選擇</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa fa-info-circle text-blue-500 mt-1 mr-2"></i>
+                                <span>購買數量越多，單價通常越優惠</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- 為什麼印度藥物價格更低 -->
+                    <div class="bg-blue-50 rounded-lg p-6">
+                        <h3 class="text-xl font-semibold text-primary mb-4 flex items-center">
+                            <i class="fa fa-question-circle mr-2"></i>為什麼印度藥物價格更低
+                        </h3>
+                        <ul class="text-gray-700 space-y-2">
+                            <li class="flex items-start">
+                                <i class="fa fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                <span>印度專利法允許生產學名藥，不需支付高昂的專利費</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                <span>生產成本和人力成本相對較低</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                <span>政府對藥品價格管制較嚴格</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                <span>藥品出口量龐大，規模效應降低成本</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 注意事項部分 -->
+        <section id="precautions" class="mb-16">
+            <div class="bg-white rounded-xl shadow-card p-6 md:p-8 fade-in">
+                <h2 class="text-2xl md:text-3xl font-bold text-primary mb-6 flex items-center">
+                    <i class="fa fa-exclamation-triangle mr-3"></i>購買與使用注意事項
+                </h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                    <!-- 購買注意事項 -->
+                    <div>
+                        <h3 class="text-xl font-semibold text-primary mb-4 flex items-center">
+                            <i class="fa fa-shopping-cart mr-2"></i>購買注意事項
+                        </h3>
+                        <ul class="text-gray-700 space-y-3">
+                            <li class="flex items-start">
+                                <div class="bg-red-100 rounded-full p-1 mr-3 mt-0.5">
+                                    <i class="fa fa-times text-red-500"></i>
+                                </div>
+                                <div>
+                                    <p class="font-medium">勿購買來路不明的產品</p>
+                                    <p class="text-sm text-gray-600">避免透過非正規渠道購買，以防購買到假冒偽劣產品</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="bg-yellow-100 rounded-full p-1 mr-3 mt-0.5">
+                                    <i class="fa fa-exclamation text-yellow-500"></i>
+                                </div>
+                                <div>
+                                    <p class="font-medium">謹慎選擇網路商家</p>
+                                    <p class="text-sm text-gray-600">選擇有信譽的網路藥局或藥廠授權代理商，檢查網站認證和用戶評價</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="bg-green-100 rounded-full p-1 mr-3 mt-0.5">
+                                    <i class="fa fa-check text-green-500"></i>
+                                </div>
+                                <div>
+                                    <p class="font-medium">確認產品包裝和標籤</p>
+                                    <p class="text-sm text-gray-600">檢查包裝是否完好，標籤是否清晰，是否有防偽標識</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="bg-blue-100 rounded-full p-1 mr-3 mt-0.5">
+                                    <i class="fa fa-info text-blue-500"></i>
+                                </div>
+                                <div>
+                                    <p class="font-medium">了解退換貨政策</p>
+                                    <p class="text-sm text-gray-600">購買前了解商家的退換貨政策，以保障自身權益</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- 使用注意事項 -->
+                    <div>
+                        <h3 class="text-xl font-semibold text-primary mb-4 flex items-center">
+                            <i class="fa fa-medkit mr-2"></i>使用注意事項
+                        </h3>
+                        <ul class="text-gray-700 space-y-3">
+                            <li class="flex items-start">
+                                <div class="bg-red-100 rounded-full p-1 mr-3 mt-0.5">
+                                    <i class="fa fa-times text-red-500"></i>
+                                </div>
+                                <div>
+                                    <p class="font-medium">勿自行調整劑量</p>
+                                    <p class="text-sm text-gray-600">應按照醫師指示使用，不要隨意增加或減少劑量</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="bg-yellow-100 rounded-full p-1 mr-3 mt-0.5">
+                                    <i class="fa fa-exclamation text-yellow-500"></i>
+                                </div>
+                                <div>
+                                    <p class="font-medium">注意潛在副作用</p>
+                                    <p class="text-sm text-gray-600">常見副作用包括頭痛、眩暈、噁心等，如出現嚴重副作用應立即停藥並就醫</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="bg-green-100 rounded-full p-1 mr-3 mt-0.5">
+                                    <i class="fa fa-check text-green-500"></i>
+                                </div>
+                                <div>
+                                    <p class="font-medium">避免與某些藥物同時使用</p>
+                                    <p class="text-sm text-gray-600">必利勁不可與單胺氧化酶抑制劑(MAOIs)、硫利達嗪等藥物同時使用</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="bg-blue-100 rounded-full p-1 mr-3 mt-0.5">
+                                    <i class="fa fa-info text-blue-500"></i>
+                                </div>
+                                <div>
+                                    <p class="font-medium">特殊人群使用需謹慎</p>
+                                    <p class="text-sm text-gray-600">肝腎功能不全者、心臟病患者等特殊人群使用前應諮詢醫師</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- 禁忌症 -->
+                <div class="bg-red-50 rounded-lg p-6">
+                    <h3 class="text-xl font-semibold text-red-700 mb-4 flex items-center">
+                        <i class="fa fa-ban mr-2"></i>禁忌症
+                    </h3>
+                    <p class="text-gray-700 mb-3">以下人群不適合使用必利勁：</p>
+                    <ul class="list-disc list-inside text-gray-700 space-y-2">
+                        <li>對達泊西汀或藥物中任何成分過敏者</li>
+                        <li>正在使用單胺氧化酶抑制劑(MAOIs)者</li>
+                        <li>正在使用硫利達嗪者</li>
+                        <li>正在使用其他具有單胺氧化酶抑制作用的藥物者</li>
+                        <li>有嚴重肝功能不全者</li>
+                        <li>有癲癇病史者</li>
+                        <li>有嚴重心血管疾病者</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- 常見問題部分 -->
+        <section id="faq" class="mb-16">
+            <div class="bg-white rounded-xl shadow-card p-6 md:p-8 fade-in">
+                <h2 class="text-2xl md:text-3xl font-bold text-primary mb-6 flex items-center">
+                    <i class="fa fa-question-circle mr-3"></i>常見問題
+                </h2>
+                
+                <div class="space-y-4">
+                    <!-- 問題1 -->
+                    <div class="border border-gray-200 rounded-lg overflow-hidden">
+                        <button class="faq-question w-full flex justify-between items-center p-4 text-left bg-gray-50 hover:bg-gray-100 transition-all-300 focus:outline-none">
+                            <span class="font-medium text-gray-800">必利勁需要醫師處方嗎？</span>
+                            <i class="fa fa-chevron-down text-gray-500 transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-answer bg-white p-4 border-t border-gray-200 hidden">
+                            <p class="text-gray-700">
+                                是的，必利勁是處方藥，必須在醫師診斷後憑處方購買使用。醫師會根據您的具體情況評估是否適合使用必利勁，並決定合適的劑量。
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- 問題2 -->
+                    <div class="border border-gray-200 rounded-lg overflow-hidden">
+                        <button class="faq-question w-full flex justify-between items-center p-4 text-left bg-gray-50 hover:bg-gray-100 transition-all-300 focus:outline-none">
+                            <span class="font-medium text-gray-800">印度必利勁學名藥是否安全有效？</span>
+                            <i class="fa fa-chevron-down text-gray-500 transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-answer bg-white p-4 border-t border-gray-200 hidden">
+                            <p class="text-gray-700">
+                                印度必利勁學名藥含有與原廠藥相同的活性成分達泊西汀，臨床研究表明其效果和安全性與原廠藥相似。但需要注意的是，應選擇正規廠家生產的產品，避免購買到假冒偽劣產品。
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- 問題3 -->
+                    <div class="border border-gray-200 rounded-lg overflow-hidden">
+                        <button class="faq-question w-full flex justify-between items-center p-4 text-left bg-gray-50 hover:bg-gray-100 transition-all-300 focus:outline-none">
+                            <span class="font-medium text-gray-800">必利勁的效果可以持續多久？</span>
+                            <i class="fa fa-chevron-down text-gray-500 transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-answer bg-white p-4 border-t border-gray-200 hidden">
+                            <p class="text-gray-700">
+                                必利勁通常在服用後1-2小時達到血藥濃度峰值，效果可以持續約4-6小時。但實際效果持續時間可能因個體差異而有所不同。
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- 問題4 -->
+                    <div class="border border-gray-200 rounded-lg overflow-hidden">
+                        <button class="faq-question w-full flex justify-between items-center p-4 text-left bg-gray-50 hover:bg-gray-100 transition-all-300 focus:outline-none">
+                            <span class="font-medium text-gray-800">必利勁可以與酒精一起使用嗎？</span>
+                            <i class="fa fa-chevron-down text-gray-500 transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-answer bg-white p-4 border-t border-gray-200 hidden">
+                            <p class="text-gray-700">
+                                不建議將必利勁與酒精一起使用。酒精可能會增加必利勁的副作用風險，如頭痛、眩暈、噁心等，並可能降低藥物效果。
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- 問題5 -->
+                    <div class="border border-gray-200 rounded-lg overflow-hidden">
+                        <button class="faq-question w-full flex justify-between items-center p-4 text-left bg-gray-50 hover:bg-gray-100 transition-all-300 focus:outline-none">
+                            <span class="font-medium text-gray-800">必利勁是否有副作用？</span>
+                            <i class="fa fa-chevron-down text-gray-500 transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-answer bg-white p-4 border-t border-gray-200 hidden">
+                            <p class="text-gray-700">
+                                是的，必利勁和所有藥物一樣，可能會引起<a href="https://www.lowe99.com/">必利勁副作用</a>。常見的副作用包括頭痛、眩暈、噁心、腹瀉、失眠等。大多數副作用是輕度至中度的，並且會在短時間內消失。如果出現嚴重副作用，應立即停藥並就醫。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 頁腳 -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <div class="flex items-center space-x-2 mb-4">
+                        <i class="fa fa-heartbeat text-accent text-2xl"></i>
+                        <span class="text-xl font-bold">必利勁購買指南</span>
+                    </div>
+                    <p class="text-gray-400 max-w-md">
+                        本網站提供必利勁的相關健康資訊，僅供參考，不構成醫療建議。如有健康問題，請諮詢專業醫師。
+                        <p dir="ltr"><strong><a href="https://www.lowe99.com/%e5%bf%85%e5%88%a9%e5%8b%81%e9%a6%99%e6%b8%af%e9%82%8a%e5%ba%a6%e8%b2%b7/">必利勁 香港邊到有得買</a></strong></p>
+
+<p dir="ltr"><a href="https://www.lowe99.com/">必利勁副廠</a></p>
+
+<p dir="ltr"><a href="https://www.lowe99.com/">必利勁 hk</a></p>
+
+<p dir="ltr"><a href="https://www.lowe99.com/">必利勁屈臣氏</a></p>
+
+<p dir="ltr"><a href="https://www.lowe99.com/">必利勁官網</a></p>
+
+<p dir="ltr"><a href="https://www.lowe99.com/">必利勁療程</a></p>
+
+<p dir="ltr"><a href="https://www.lowe99.com/">必利勁 購買</a></p>
+
+                    </p>
+                </div>
+                
+                <div class="flex flex-col items-center md:items-end">
+                    <div class="flex space-x-4 mb-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition-all-300">
+                            <i class="fa fa-facebook-square text-2xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-all-300">
+                            <i class="fa fa-twitter-square text-2xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-all-300">
+                            <i class="fa fa-instagram text-2xl"></i>
+                        </a>
+                    </div>
+                    <p class="text-gray-400">© 2025 必利勁購買指南. 保留所有權利.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 返回頂部按鈕 -->
+    <button id="back-to-top" class="fixed bottom-8 right-8 bg-primary text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg opacity-0 invisible transition-all-300">
+        <i class="fa fa-chevron-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script>
+        // 初始化AOS動畫庫
+        document.addEventListener('DOMContentLoaded', function() {
+            AOS.init({
+                duration: 800,
+                easing: 'ease-in-out',
+                once: true
+            });
+            
+            // 移動導航菜單切換
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            
+            mobileMenuButton.addEventListener('click', function() {
+                mobileMenu.classList.toggle('hidden');
+            });
+            
+            // FAQ 折疊面板
+            const faqQuestions = document.querySelectorAll('.faq-question');
+            
+            faqQuestions.forEach(question => {
+                question.addEventListener('click', function() {
+                    const answer = this.nextElementSibling;
+                    const icon = this.querySelector('i');
+                    
+                    // 切換當前問題的答案顯示/隱藏
+                    answer.classList.toggle('hidden');
+                    
+                    // 旋轉圖標
+                    if (answer.classList.contains('hidden')) {
+                        icon.style.transform = 'rotate(0deg)';
+                    } else {
+                        icon.style.transform = 'rotate(180deg)';
+                    }
+                });
+            });
+            
+            // 返回頂部按鈕
+            const backToTopButton = document.getElementById('back-to-top');
+            
+            window.addEventListener('scroll', function() {
+                if (window.pageYOffset > 300) {
+                    backToTopButton.classList.remove('opacity-0', 'invisible');
+                    backToTopButton.classList.add('opacity-100', 'visible');
+                } else {
+                    backToTopButton.classList.remove('opacity-100', 'visible');
+                    backToTopButton.classList.add('opacity-0', 'invisible');
+                }
+            });
+            
+            backToTopButton.addEventListener('click', function() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+            
+            // 滾動動畫
+            const fadeElements = document.querySelectorAll('.fade-in');
+            
+            const fadeInOnScroll = function() {
+                fadeElements.forEach(element => {
+                    const elementTop = element.getBoundingClientRect().top;
+                    const windowHeight = window.innerHeight;
+                    
+                    if (elementTop < windowHeight - 100) {
+                        element.classList.add('visible');
+                    }
+                });
+            };
+            
+            // 初始檢查
+            fadeInOnScroll();
+            
+            // 滾動時檢查
+            window.addEventListener('scroll', fadeInOnScroll);
+        });
+    </script>
+</body>
+</html>
